@@ -11,3 +11,11 @@ def make_word_groups(vocab_words: list) -> str:
     """
     prefix = " :: " + vocab_words[0]  # O(n^2)
     return prefix.join(vocab_words)  # O(n)
+
+
+def remove_suffix_ness(word: str) -> str:
+    """
+    This function takes in a word and returns the base word with `ness` removed
+    """
+    if word[-5:] == 'iness':
+        return word[0:-5] + 'y'
