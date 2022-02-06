@@ -1,3 +1,6 @@
+import string
+
+
 def add_prefix_un(word: str) -> str:
     """"
     This function takes `word` as a paramater and returns a new word with an 'un' prefix.
@@ -20,3 +23,13 @@ def remove_suffix_ness(word: str) -> str:
     if word[-5:] == 'iness':
         return word[0:-5] + 'y'
     return word[0:-4]
+
+
+def adjective_to_verb(sentence: str, index: int) -> str:
+    """
+    This function takes a `sentence` using the vocablulary word and the `index` of the word.
+    The function returns the extracted adjective as a verb.
+    """
+    words = sentence.translate(str.maketrans('', '', string.punctuation))
+    words = words.split()
+    return words[index] + 'en'
