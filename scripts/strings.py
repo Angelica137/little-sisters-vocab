@@ -19,3 +19,4 @@ def remove_suffix_ness(word: str) -> str:
     """
     if word[-5:] == 'iness':
         return word[0:-5] + 'y'
+    return word[0:-4]
