@@ -22,3 +22,8 @@ def test_make_word_groups_pre():
 def test_make_word_groups_auto():
     assert make_word_groups(['auto', 'didactic', 'graph', 'mate']
                             ) == 'auto :: autodidactic :: autograph :: automate'
+
+
+def test_make_word_groups_inter():
+    assert make_word_groups(['inter', 'twine', 'connected', 'dependent']
+                            ) == 'inter :: intertwine :: interconnected :: interdependent'
