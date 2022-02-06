@@ -35,3 +35,7 @@ def test_remove_suffix_ness_y():
 
 def test_remove_suffix_ness():
     assert remove_suffix_ness('sadness') == 'sad'
+
+
+def test_adjective_to_verb_bright():
+    assert adjective_to_verb('I need to make that bright.', -1) == 'brighten'
