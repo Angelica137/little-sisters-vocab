@@ -39,3 +39,7 @@ def test_remove_suffix_ness():
 
 def test_adjective_to_verb_bright():
     assert adjective_to_verb('I need to make that bright.', -1) == 'brighten'
+
+
+def test_adjective_to_verb_darken():
+    assert adjective_to_verb('It got dark as the sun set.', 2) == 'darken'
