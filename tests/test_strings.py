@@ -30,4 +30,4 @@ def test_make_word_groups_inter():
 
 
 def test_remove_suffix_ness_y():
-    assert remove_suffix_ness('heavy') == 'heavy'
+    assert remove_suffix_ness('heaviness') == 'heavy'
