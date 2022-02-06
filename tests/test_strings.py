@@ -17,3 +17,8 @@ def test_make_word_groups_en():
 def test_make_word_groups_pre():
     assert make_word_groups(['pre', 'serve', 'dispose', 'position']
                             ) == 'pre :: preserve :: predispose :: preposition'
+
+
+def test_make_word_groups_auto():
+    assert make_word_groups(['auto', 'didactic', 'graph', 'mate']
+                            ) == 'auto :: autodidactic :: autograph :: automate'
