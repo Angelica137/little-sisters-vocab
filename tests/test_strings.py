@@ -27,3 +27,7 @@ def test_make_word_groups_auto():
 def test_make_word_groups_inter():
     assert make_word_groups(['inter', 'twine', 'connected', 'dependent']
                             ) == 'inter :: intertwine :: interconnected :: interdependent'
+
+
+def test_remove_suffix_ness_y():
+    assert remove_suffix_ness('heavy') == 'heavy'
