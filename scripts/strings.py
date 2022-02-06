@@ -12,8 +12,7 @@ def make_word_groups(vocab_words: list) -> str:
     """
     This function takes a `vocab_words` list and returns a strong with the prefix and the words with the prefix applied, separated by '::'.
     """
-    prefix = f' :: {vocab_words[0]}'  # O(n^2)
-    return prefix.join(vocab_words)  # O(n)
+    return f' :: {vocab_words[0]}'.join(vocab_words)  # O(n)
 
 
 def remove_suffix_ness(word: str) -> str:
