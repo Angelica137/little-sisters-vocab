@@ -31,4 +31,4 @@ def adjective_to_verb(sentence: str, index: int) -> str:
     """
     words = sentence.translate(str.maketrans(
         '', '', string.punctuation)).split()
-    return f'{words[index]}en'
+    return words[index] + 'en'
