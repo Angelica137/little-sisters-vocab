@@ -19,8 +19,8 @@ def remove_suffix_ness(word: str) -> str:
     """
     This function takes in a word and returns the base word with `ness` removed
     """
-    ending = word[-5:]
-    return (word[0:-5] + 'y') if (ending := 'iness') else word[0:-4]
+    ending = 'iness'
+    return (word[0:-5] + 'y') if (word[-5:] == 'iness') else word[0:-4]
 
 
 def adjective_to_verb(sentence: str, index: int) -> str:
