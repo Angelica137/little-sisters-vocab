@@ -31,7 +31,5 @@ def adjective_to_verb(sentence: str, index: int) -> str:
         '', '', string.punctuation)).split()
     return words[index] + 'en'
     """
-    words = sentence.split(" ")
-    if words[index][-1] in string.punctuation:
-        return words[index][:-1] + "en"
-    return words[index] + "en"
+    word = sentence.split(" ")[index]
+    return (word + "en") if (word[-1] not in string.punctuation) else (word[:-1] + "en")
