@@ -19,7 +19,6 @@ def remove_suffix_ness(word: str) -> str:
     """
     This function takes in a word and returns the base word with `ness` removed
     """
-    ending = 'iness'
     return (word[0:-5] + 'y') if (word[-5:] == 'iness') else word[0:-4]
 
 
