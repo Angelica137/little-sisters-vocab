@@ -26,7 +26,12 @@ def adjective_to_verb(sentence: str, index: int) -> str:
     """
     This function takes a `sentence` using the vocablulary word and the `index` of the word.
     The function returns the extracted adjective as a verb.
-    """
+
     words = sentence.translate(str.maketrans(
         '', '', string.punctuation)).split()
     return words[index] + 'en'
+    """
+    words = sentence.split(" ")
+    if words[index][-1] in string.punctuation:
+        return words[index][:-1] + "en"
+    return words[index] + "en"
