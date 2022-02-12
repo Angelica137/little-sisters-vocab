@@ -5,7 +5,7 @@ def add_prefix_un(word: str) -> str:
     """"
     This function takes `word` as a paramater and returns a new word with an 'un' prefix.
     """
-    return f'un{word}'  # O(n^2)
+    return 'un' + word  # O(n^2)
 
 
 def make_word_groups(vocab_words: list) -> str:
